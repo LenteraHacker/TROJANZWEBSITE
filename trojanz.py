@@ -74,9 +74,7 @@ def dos2():
 
 def usage():
 	print (''' \033[92m	
-	Pembuat tidak bertanggung jawab jika digunakan untuk melawan hukum.
-	Pembuat tidak bertanggung jawab jika Lucita Luna hamil :).
-	Script ini recode ke bahasa indonesia dari script Hammer v.1 \n
+	Bukan tangung jawab kami \n
 	cara pakai : python3 trojanz.py [-s] [-p] [-t]
 	contoh : python3 trojanz.py -s 192.168.0.1 -p 80 -t 135	
 	-h : help
@@ -139,7 +137,7 @@ if __name__ == '__main__':
 		s.connect((host,int(port)))
 		s.settimeout(1)
 	except socket.error as e:
-		print("\033[91mKesalahan : Cek lagi ip and port target\033[0m")
+		print("\033[92mKesalahan : Cek lagi ip and port target lagi\033[0m")
 		usage()
 	while True:
 		for i in range(int(thr)):
